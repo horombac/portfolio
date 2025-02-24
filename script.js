@@ -14,18 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.forEach(el => observer.observe(el));
   });
   
-  // Handle form submission (client-side only)
-  const form = document.getElementById('contact-form');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = form.querySelector('input[name="name"]').value;
-    const email = form.querySelector('input[name="email"]').value;
-    const message = form.querySelector('textarea[name="message"]').value;
-  
-    // For now, just log to console (you'll need a backend to send emails)
-    console.log('Form submitted:', { name, email, message });
-    alert('Thank you! Your message has been submitted.');
-  
-    // Reset form
-    form.reset();
-  });
+// Handle form submission with EmailJS
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Send form data via EmailJS
+  emailjs.sendForm('service_r742ika', 'template_bex23gv', form)
+    .then(() => {
+      alert('Thank you! Your message has been sent successfully.');
+      form.reset(); // Clear the form
+    }, (error) => {
+      alert('Oops! Something went wrong. Please try again.');
+      console.error('EmailJS error:', error);
+    });
+});
+});
