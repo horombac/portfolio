@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio For Collin Horomba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero animate-on-scroll">
+        <h1>Hi, I'm Collin Horomba</h1>
+        <p>Frontend Developer</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </header>
+
+    <main>
+        <section class="about animate-on-scroll">
+            <h2>About Me</h2>
+            <div class="grid">
+                <p>
+                    I'm a passionate frontend developer skilled in HTML, CSS, and JavaScript, creating responsive, user-friendly web experiences.
+                </p>
+                <img src="https://via.placeholder.com/300" alt="Your Photo" loading="lazy" class="about-img">
+            </div>
+        </section>
+
+        <section class="skills animate-on-scroll">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+            </div>
+        </section>
+        <section class="projects animate-on-scroll" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+              <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1" loading="lazy">
+                <h3>Project 1</h3>
+                <p>A responsive landing page built with HTML and CSS.</p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+              <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2" loading="lazy">
+                <h3>Project 2</h3>
+                <p>An interactive app using JavaScript and DOM manipulation.</p>
+                <a href="#" class="btn">View Project</a>
+              </div>
+            </div>
+        </section>
+
+        <section class="contact animate-on-scroll">
+            <h2>Contact Me</h2>
+            <p>Reach out via WhatsApp or send me an email!</p>
+            <a href="https://wa.me/1234567890" target="_blank" class="btn whatsapp-btn">Message on WhatsApp</a>
+            <form id="contact-form" class="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn">Send Email</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Collin Horomba. All rights reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
