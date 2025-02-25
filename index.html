@@ -16,9 +16,12 @@
 </head>
 <body>
     <header class="hero animate-on-scroll">
-        <h1>Hi, I'm Collin Horomba</h1>
-        <p>Frontend Developer</p>
-        <a href="#projects" class="btn">See My Work</a>
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm Collin Horomba</h1>
+            <p>Frontend Developer</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
     </header>
 
     <main>
@@ -28,7 +31,12 @@
                 <p>
                     I'm a passionate frontend developer skilled in HTML, CSS, and JavaScript, creating responsive, user-friendly web experiences.
                 </p>
-                <img src="https://via.placeholder.com/300" alt="Your Photo" loading="lazy" class="about-img">
+                <video controls autoplay muted loop loading="lazy" class="about-video" aria-label="Video introducing [Your Name] as a frontend developer">
+                    <source src="path/to/your-video.mp4" type="video/mp4">
+                    <source src="path/to/your-video.webm" type="video/webm">
+                    <img src="https://via.placeholder.com/300" alt="Fallback image for video" loading="lazy" class="about-video-fallback">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </section>
 
